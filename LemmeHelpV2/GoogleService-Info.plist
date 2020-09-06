@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>119668015664-hk432ds6j9p0i4ur14to77bp2b13pvtc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.119668015664-hk432ds6j9p0i4ur14to77bp2b13pvtc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCRpfq0WgMIkUYrFrY1pSBa8FgvC_4Jjf8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>119668015664</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.colinjpower.LemmeHelpV2</string>
+	<key>PROJECT_ID</key>
+	<string>lemmehelpv2-firebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lemmehelpv2-firebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:119668015664:ios:2fd5b00bc134177397e3f5</string>
+	<key>DATABASE_URL</key>
+	<string>https://lemmehelpv2-firebase.firebaseio.com</string>
+</dict>
+</plist>

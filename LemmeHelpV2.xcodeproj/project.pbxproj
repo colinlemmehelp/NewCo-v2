@@ -3,18 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3039795025050599004B91F9 /* AddTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039794F25050599004B91F9 /* AddTagView.swift */; };
+		30397952250507CE004B91F9 /* ViewTagPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30397951250507CE004B91F9 /* ViewTagPerformance.swift */; };
+		3039795425051061004B91F9 /* ProfileBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039795325051061004B91F9 /* ProfileBannerView.swift */; };
+		3048010524F90DEF003D1205 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048010424F90DEF003D1205 /* FloatingTabBar.swift */; };
+		3048010924F9B553003D1205 /* MyTicketsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048010824F9B553003D1205 /* MyTicketsBannerView.swift */; };
+		3048010B24F9BF48003D1205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048010A24F9BF48003D1205 /* ContentView.swift */; };
+		304AC0B524F148B100465D9A /* TicketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304AC0B424F148B100465D9A /* TicketsViewModel.swift */; };
+		304E7F0F24F124AD00E9E76D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E7F0E24F124AD00E9E76D /* LoginView.swift */; };
+		304E7F1124F12E5300E9E76D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E7F1024F12E5300E9E76D /* SessionStore.swift */; };
+		3050CCD324F90A7200257FFE /* ConfirmTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050CCD224F90A7200257FFE /* ConfirmTagView.swift */; };
+		306E78D425052F2C0021456B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E78D325052F2C0021456B /* PushNotificationManager.swift */; };
+		3071167F24F0F1D00085C29E /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071167E24F0F1D00085C29E /* Ticket.swift */; };
+		3071168124F103210085C29E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168024F103210085C29E /* ChatView.swift */; };
+		3071168324F104910085C29E /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168224F104910085C29E /* ChatRow.swift */; };
+		3071168524F106F40085C29E /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168424F106F40085C29E /* Chat.swift */; };
+		3071168724F11BE20085C29E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3071168624F11BE20085C29E /* GoogleService-Info.plist */; };
+		309C92AF24F166B9000510EA /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92AE24F166B9000510EA /* ChatsViewModel.swift */; };
+		309C92B624F20226000510EA /* MyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B524F20226000510EA /* MyTicketsView.swift */; };
+		309C92B824F2023D000510EA /* MyTicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B724F2023D000510EA /* MyTicketRow.swift */; };
+		309C92BA24F2078C000510EA /* NewTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B924F2078C000510EA /* NewTicketsView.swift */; };
+		30B6D9AE24F3A90E0087E28F /* SuggestedResponseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6D9AD24F3A90E0087E28F /* SuggestedResponseRow.swift */; };
+		30B6D9B024F3B4930087E28F /* SuggestedArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6D9AF24F3B4930087E28F /* SuggestedArticleRow.swift */; };
+		30B873AC24F8459800421A9B /* EnterAResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873AB24F8459800421A9B /* EnterAResponseView.swift */; };
+		30B873B024F8524900421A9B /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873AF24F8524900421A9B /* BottomTabView.swift */; };
+		30B873B224F87D3000421A9B /* NewTicketsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B124F87D3000421A9B /* NewTicketsBannerView.swift */; };
+		30B873B524F87EEE00421A9B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B424F87EEE00421A9B /* ProfileView.swift */; };
+		30B873B724F8A0EF00421A9B /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B624F8A0EF00421A9B /* ChatHeaderView.swift */; };
+		30B873BB24F8E6D300421A9B /* ChatModuleSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BA24F8E6D300421A9B /* ChatModuleSwitcher.swift */; };
+		30B873BD24F8EF0B00421A9B /* ChatThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */; };
+		30B873BF24F8EF1A00421A9B /* OrderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */; };
+		30B873C124F8EF2800421A9B /* ShopifyActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */; };
+		30D584842504DE010090EF48 /* CreateAndViewTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D584832504DE010090EF48 /* CreateAndViewTags.swift */; };
 		30EF147F24DBBE4700200A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF147E24DBBE4700200A50 /* AppDelegate.swift */; };
 		30EF148124DBBE4700200A50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148024DBBE4700200A50 /* SceneDelegate.swift */; };
-		30EF148324DBBE4700200A50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148224DBBE4700200A50 /* ContentView.swift */; };
+		30EF148324DBBE4700200A50 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148224DBBE4700200A50 /* TicketView.swift */; };
 		30EF148524DBBE4900200A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF148424DBBE4900200A50 /* Assets.xcassets */; };
 		30EF148824DBBE4900200A50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF148724DBBE4900200A50 /* Preview Assets.xcassets */; };
 		30EF148B24DBBE4900200A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF148924DBBE4900200A50 /* LaunchScreen.storyboard */; };
 		30EF149624DBBE4A00200A50 /* LemmeHelpV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF149524DBBE4A00200A50 /* LemmeHelpV2Tests.swift */; };
 		30EF14A124DBBE4A00200A50 /* LemmeHelpV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF14A024DBBE4A00200A50 /* LemmeHelpV2UITests.swift */; };
+		30EF14AF24DBC51A00200A50 /* NewTicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF14AE24DBC51A00200A50 /* NewTicketRow.swift */; };
+		4750FCC6EFE0D85D1795C1DB /* Pods_LemmeHelpV2_LemmeHelpV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 736293E9E99122B800E48DE9 /* Pods_LemmeHelpV2_LemmeHelpV2UITests.framework */; };
+		770633E4B8A93E57D88A733E /* Pods_LemmeHelpV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F61DF1F5B8E62C71D46F3F /* Pods_LemmeHelpV2Tests.framework */; };
+		C53C2D530634D20FC2492207 /* Pods_LemmeHelpV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C0562CA66259CD8C1674EC /* Pods_LemmeHelpV2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +71,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144C764AD2A37B403334FB2E /* Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2-LemmeHelpV2UITests/Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		284791A42ADE924660B61972 /* Pods-LemmeHelpV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2.debug.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2/Pods-LemmeHelpV2.debug.xcconfig"; sourceTree = "<group>"; };
+		2F134FC88E3DAAD8DB167813 /* Pods-LemmeHelpV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2Tests.debug.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2Tests/Pods-LemmeHelpV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3039794F25050599004B91F9 /* AddTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagView.swift; sourceTree = "<group>"; };
+		30397951250507CE004B91F9 /* ViewTagPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTagPerformance.swift; sourceTree = "<group>"; };
+		3039795325051061004B91F9 /* ProfileBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBannerView.swift; sourceTree = "<group>"; };
+		3048010424F90DEF003D1205 /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
+		3048010824F9B553003D1205 /* MyTicketsBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsBannerView.swift; sourceTree = "<group>"; };
+		3048010A24F9BF48003D1205 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		304AC0B424F148B100465D9A /* TicketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewModel.swift; sourceTree = "<group>"; };
+		304E7F0E24F124AD00E9E76D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		304E7F1024F12E5300E9E76D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		3050CCD224F90A7200257FFE /* ConfirmTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTagView.swift; sourceTree = "<group>"; };
+		306E78D225052A930021456B /* LemmeHelpV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LemmeHelpV2.entitlements; sourceTree = "<group>"; };
+		306E78D325052F2C0021456B /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		3071167E24F0F1D00085C29E /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		3071168024F103210085C29E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		3071168224F104910085C29E /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		3071168424F106F40085C29E /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		3071168624F11BE20085C29E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		309C92AE24F166B9000510EA /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
+		309C92B524F20226000510EA /* MyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsView.swift; sourceTree = "<group>"; };
+		309C92B724F2023D000510EA /* MyTicketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketRow.swift; sourceTree = "<group>"; };
+		309C92B924F2078C000510EA /* NewTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTicketsView.swift; sourceTree = "<group>"; };
+		30B6D9AD24F3A90E0087E28F /* SuggestedResponseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedResponseRow.swift; sourceTree = "<group>"; };
+		30B6D9AF24F3B4930087E28F /* SuggestedArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedArticleRow.swift; sourceTree = "<group>"; };
+		30B873AB24F8459800421A9B /* EnterAResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAResponseView.swift; sourceTree = "<group>"; };
+		30B873AF24F8524900421A9B /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		30B873B124F87D3000421A9B /* NewTicketsBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTicketsBannerView.swift; sourceTree = "<group>"; };
+		30B873B424F87EEE00421A9B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		30B873B624F8A0EF00421A9B /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
+		30B873BA24F8E6D300421A9B /* ChatModuleSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModuleSwitcher.swift; sourceTree = "<group>"; };
+		30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatThreadView.swift; sourceTree = "<group>"; };
+		30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
+		30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopifyActionsView.swift; sourceTree = "<group>"; };
+		30D584832504DE010090EF48 /* CreateAndViewTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndViewTags.swift; sourceTree = "<group>"; };
 		30EF147B24DBBE4700200A50 /* LemmeHelpV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemmeHelpV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF147E24DBBE4700200A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30EF148024DBBE4700200A50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30EF148224DBBE4700200A50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30EF148224DBBE4700200A50 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		30EF148424DBBE4900200A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30EF148724DBBE4900200A50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30EF148A24DBBE4900200A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +121,13 @@
 		30EF149C24DBBE4A00200A50 /* LemmeHelpV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemmeHelpV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF14A024DBBE4A00200A50 /* LemmeHelpV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemmeHelpV2UITests.swift; sourceTree = "<group>"; };
 		30EF14A224DBBE4A00200A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF14AE24DBC51A00200A50 /* NewTicketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTicketRow.swift; sourceTree = "<group>"; };
+		68C0562CA66259CD8C1674EC /* Pods_LemmeHelpV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemmeHelpV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		736293E9E99122B800E48DE9 /* Pods_LemmeHelpV2_LemmeHelpV2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemmeHelpV2_LemmeHelpV2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F89DB25F58CCE86CC6BEAFC /* Pods-LemmeHelpV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2Tests.release.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2Tests/Pods-LemmeHelpV2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9B9C17D0FA4B9A5726C1CE86 /* Pods-LemmeHelpV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2.release.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2/Pods-LemmeHelpV2.release.xcconfig"; sourceTree = "<group>"; };
+		B4F61DF1F5B8E62C71D46F3F /* Pods_LemmeHelpV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemmeHelpV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96E9C3AD5741A49348FBA89 /* Pods-LemmeHelpV2-LemmeHelpV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2-LemmeHelpV2UITests.release.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2-LemmeHelpV2UITests/Pods-LemmeHelpV2-LemmeHelpV2UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53C2D530634D20FC2492207 /* Pods_LemmeHelpV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770633E4B8A93E57D88A733E /* Pods_LemmeHelpV2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +151,156 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4750FCC6EFE0D85D1795C1DB /* Pods_LemmeHelpV2_LemmeHelpV2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		304AC0AF24F1426700465D9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3071167E24F0F1D00085C29E /* Ticket.swift */,
+				3071168424F106F40085C29E /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		304AC0B024F142AC00465D9A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				304E7F1024F12E5300E9E76D /* SessionStore.swift */,
+				30EF148024DBBE4700200A50 /* SceneDelegate.swift */,
+				30EF147E24DBBE4700200A50 /* AppDelegate.swift */,
+				306E78D325052F2C0021456B /* PushNotificationManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		304AC0B224F1437700465D9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				309C92B024F1FA33000510EA /* Main View */,
+				309C92B124F1FA50000510EA /* Main Chat View */,
+				309C92B224F1FA5A000510EA /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		304AC0B324F1489600465D9A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				304AC0B424F148B100465D9A /* TicketsViewModel.swift */,
+				309C92AE24F166B9000510EA /* ChatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		309C92B024F1FA33000510EA /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				30EF148224DBBE4700200A50 /* TicketView.swift */,
+				30B873AF24F8524900421A9B /* BottomTabView.swift */,
+				30B873B824F8E54800421A9B /* New Tickets */,
+				30B873B924F8E56900421A9B /* My Tickets */,
+				30B873B324F87ED600421A9B /* Profile */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		309C92B124F1FA50000510EA /* Main Chat View */ = {
+			isa = PBXGroup;
+			children = (
+				3071168024F103210085C29E /* ChatView.swift */,
+				30B873B624F8A0EF00421A9B /* ChatHeaderView.swift */,
+				30B873BA24F8E6D300421A9B /* ChatModuleSwitcher.swift */,
+				3048010A24F9BF48003D1205 /* ContentView.swift */,
+				30B873C224F8F88300421A9B /* Chat View */,
+				30B873C324F8F8B900421A9B /* Order Details View */,
+				30B873C424F8F8C600421A9B /* Shopify Actions View */,
+			);
+			path = "Main Chat View";
+			sourceTree = "<group>";
+		};
+		309C92B224F1FA5A000510EA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				304E7F0E24F124AD00E9E76D /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		30B873B324F87ED600421A9B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				30B873B424F87EEE00421A9B /* ProfileView.swift */,
+				3039795325051061004B91F9 /* ProfileBannerView.swift */,
+				30D584852504E9CB0090EF48 /* Creating and Viewing Tags */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		30B873B824F8E54800421A9B /* New Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				309C92B924F2078C000510EA /* NewTicketsView.swift */,
+				30EF14AE24DBC51A00200A50 /* NewTicketRow.swift */,
+				30B873B124F87D3000421A9B /* NewTicketsBannerView.swift */,
+			);
+			path = "New Tickets";
+			sourceTree = "<group>";
+		};
+		30B873B924F8E56900421A9B /* My Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				309C92B524F20226000510EA /* MyTicketsView.swift */,
+				309C92B724F2023D000510EA /* MyTicketRow.swift */,
+				3048010824F9B553003D1205 /* MyTicketsBannerView.swift */,
+			);
+			path = "My Tickets";
+			sourceTree = "<group>";
+		};
+		30B873C224F8F88300421A9B /* Chat View */ = {
+			isa = PBXGroup;
+			children = (
+				30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */,
+				3048010424F90DEF003D1205 /* FloatingTabBar.swift */,
+				3039794F25050599004B91F9 /* AddTagView.swift */,
+				3071168224F104910085C29E /* ChatRow.swift */,
+				30B873AB24F8459800421A9B /* EnterAResponseView.swift */,
+				30B6D9AD24F3A90E0087E28F /* SuggestedResponseRow.swift */,
+				3050CCD224F90A7200257FFE /* ConfirmTagView.swift */,
+				30B6D9AF24F3B4930087E28F /* SuggestedArticleRow.swift */,
+			);
+			path = "Chat View";
+			sourceTree = "<group>";
+		};
+		30B873C324F8F8B900421A9B /* Order Details View */ = {
+			isa = PBXGroup;
+			children = (
+				30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */,
+			);
+			path = "Order Details View";
+			sourceTree = "<group>";
+		};
+		30B873C424F8F8C600421A9B /* Shopify Actions View */ = {
+			isa = PBXGroup;
+			children = (
+				30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */,
+			);
+			path = "Shopify Actions View";
+			sourceTree = "<group>";
+		};
+		30D584852504E9CB0090EF48 /* Creating and Viewing Tags */ = {
+			isa = PBXGroup;
+			children = (
+				30D584832504DE010090EF48 /* CreateAndViewTags.swift */,
+				30397951250507CE004B91F9 /* ViewTagPerformance.swift */,
+			);
+			path = "Creating and Viewing Tags";
+			sourceTree = "<group>";
+		};
 		30EF147224DBBE4700200A50 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +308,8 @@
 				30EF149424DBBE4A00200A50 /* LemmeHelpV2Tests */,
 				30EF149F24DBBE4A00200A50 /* LemmeHelpV2UITests */,
 				30EF147C24DBBE4700200A50 /* Products */,
+				CEA5F960F7C1A1E2B94B8816 /* Pods */,
+				70E59385916C3071AEB9CFD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +326,14 @@
 		30EF147D24DBBE4700200A50 /* LemmeHelpV2 */ = {
 			isa = PBXGroup;
 			children = (
-				30EF147E24DBBE4700200A50 /* AppDelegate.swift */,
-				30EF148024DBBE4700200A50 /* SceneDelegate.swift */,
-				30EF148224DBBE4700200A50 /* ContentView.swift */,
+				306E78D225052A930021456B /* LemmeHelpV2.entitlements */,
+				304AC0B024F142AC00465D9A /* App */,
+				304AC0B224F1437700465D9A /* Views */,
+				304AC0B324F1489600465D9A /* ViewModels */,
+				304AC0AF24F1426700465D9A /* Model */,
 				30EF148424DBBE4900200A50 /* Assets.xcassets */,
 				30EF148924DBBE4900200A50 /* LaunchScreen.storyboard */,
+				3071168624F11BE20085C29E /* GoogleService-Info.plist */,
 				30EF148C24DBBE4900200A50 /* Info.plist */,
 				30EF148624DBBE4900200A50 /* Preview Content */,
 			);
@@ -136,6 +366,29 @@
 			path = LemmeHelpV2UITests;
 			sourceTree = "<group>";
 		};
+		70E59385916C3071AEB9CFD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C0562CA66259CD8C1674EC /* Pods_LemmeHelpV2.framework */,
+				736293E9E99122B800E48DE9 /* Pods_LemmeHelpV2_LemmeHelpV2UITests.framework */,
+				B4F61DF1F5B8E62C71D46F3F /* Pods_LemmeHelpV2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA5F960F7C1A1E2B94B8816 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				284791A42ADE924660B61972 /* Pods-LemmeHelpV2.debug.xcconfig */,
+				9B9C17D0FA4B9A5726C1CE86 /* Pods-LemmeHelpV2.release.xcconfig */,
+				144C764AD2A37B403334FB2E /* Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig */,
+				D96E9C3AD5741A49348FBA89 /* Pods-LemmeHelpV2-LemmeHelpV2UITests.release.xcconfig */,
+				2F134FC88E3DAAD8DB167813 /* Pods-LemmeHelpV2Tests.debug.xcconfig */,
+				8F89DB25F58CCE86CC6BEAFC /* Pods-LemmeHelpV2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30EF14A524DBBE4A00200A50 /* Build configuration list for PBXNativeTarget "LemmeHelpV2" */;
 			buildPhases = (
+				781C3F0CC8499DD7958423E0 /* [CP] Check Pods Manifest.lock */,
 				30EF147724DBBE4700200A50 /* Sources */,
 				30EF147824DBBE4700200A50 /* Frameworks */,
 				30EF147924DBBE4700200A50 /* Resources */,
+				B01EA19B9A3AEFAF49BEA6C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +415,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30EF14A824DBBE4A00200A50 /* Build configuration list for PBXNativeTarget "LemmeHelpV2Tests" */;
 			buildPhases = (
+				1A17BA5307D33824F952E4FD /* [CP] Check Pods Manifest.lock */,
 				30EF148D24DBBE4900200A50 /* Sources */,
 				30EF148E24DBBE4900200A50 /* Frameworks */,
 				30EF148F24DBBE4900200A50 /* Resources */,
@@ -178,9 +434,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30EF14AB24DBBE4A00200A50 /* Build configuration list for PBXNativeTarget "LemmeHelpV2UITests" */;
 			buildPhases = (
+				9719C4734E1263D734AC4627 /* [CP] Check Pods Manifest.lock */,
 				30EF149824DBBE4A00200A50 /* Sources */,
 				30EF149924DBBE4A00200A50 /* Frameworks */,
 				30EF149A24DBBE4A00200A50 /* Resources */,
+				64AEDAB1AA037AEAA013E479 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30EF148B24DBBE4900200A50 /* LaunchScreen.storyboard in Resources */,
+				3071168724F11BE20085C29E /* GoogleService-Info.plist in Resources */,
 				30EF148824DBBE4900200A50 /* Preview Assets.xcassets in Resources */,
 				30EF148524DBBE4900200A50 /* Assets.xcassets in Resources */,
 			);
@@ -262,14 +521,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A17BA5307D33824F952E4FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LemmeHelpV2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64AEDAB1AA037AEAA013E479 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LemmeHelpV2-LemmeHelpV2UITests/Pods-LemmeHelpV2-LemmeHelpV2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LemmeHelpV2-LemmeHelpV2UITests/Pods-LemmeHelpV2-LemmeHelpV2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LemmeHelpV2-LemmeHelpV2UITests/Pods-LemmeHelpV2-LemmeHelpV2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		781C3F0CC8499DD7958423E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LemmeHelpV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9719C4734E1263D734AC4627 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LemmeHelpV2-LemmeHelpV2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01EA19B9A3AEFAF49BEA6C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LemmeHelpV2/Pods-LemmeHelpV2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LemmeHelpV2/Pods-LemmeHelpV2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LemmeHelpV2/Pods-LemmeHelpV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30EF147724DBBE4700200A50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				30EF147F24DBBE4700200A50 /* AppDelegate.swift in Sources */,
+				3071168524F106F40085C29E /* Chat.swift in Sources */,
 				30EF148124DBBE4700200A50 /* SceneDelegate.swift in Sources */,
-				30EF148324DBBE4700200A50 /* ContentView.swift in Sources */,
+				304E7F0F24F124AD00E9E76D /* LoginView.swift in Sources */,
+				3048010924F9B553003D1205 /* MyTicketsBannerView.swift in Sources */,
+				30EF148324DBBE4700200A50 /* TicketView.swift in Sources */,
+				3039795425051061004B91F9 /* ProfileBannerView.swift in Sources */,
+				306E78D425052F2C0021456B /* PushNotificationManager.swift in Sources */,
+				30B873BB24F8E6D300421A9B /* ChatModuleSwitcher.swift in Sources */,
+				30EF14AF24DBC51A00200A50 /* NewTicketRow.swift in Sources */,
+				30B873C124F8EF2800421A9B /* ShopifyActionsView.swift in Sources */,
+				309C92AF24F166B9000510EA /* ChatsViewModel.swift in Sources */,
+				30B873B224F87D3000421A9B /* NewTicketsBannerView.swift in Sources */,
+				3039795025050599004B91F9 /* AddTagView.swift in Sources */,
+				3048010B24F9BF48003D1205 /* ContentView.swift in Sources */,
+				30B6D9AE24F3A90E0087E28F /* SuggestedResponseRow.swift in Sources */,
+				3048010524F90DEF003D1205 /* FloatingTabBar.swift in Sources */,
+				304E7F1124F12E5300E9E76D /* SessionStore.swift in Sources */,
+				309C92B824F2023D000510EA /* MyTicketRow.swift in Sources */,
+				30B873AC24F8459800421A9B /* EnterAResponseView.swift in Sources */,
+				30B6D9B024F3B4930087E28F /* SuggestedArticleRow.swift in Sources */,
+				3071167F24F0F1D00085C29E /* Ticket.swift in Sources */,
+				309C92B624F20226000510EA /* MyTicketsView.swift in Sources */,
+				30B873B724F8A0EF00421A9B /* ChatHeaderView.swift in Sources */,
+				309C92BA24F2078C000510EA /* NewTicketsView.swift in Sources */,
+				30B873BD24F8EF0B00421A9B /* ChatThreadView.swift in Sources */,
+				30D584842504DE010090EF48 /* CreateAndViewTags.swift in Sources */,
+				30B873BF24F8EF1A00421A9B /* OrderDetailsView.swift in Sources */,
+				3071168324F104910085C29E /* ChatRow.swift in Sources */,
+				3071168124F103210085C29E /* ChatView.swift in Sources */,
+				304AC0B524F148B100465D9A /* TicketsViewModel.swift in Sources */,
+				30397952250507CE004B91F9 /* ViewTagPerformance.swift in Sources */,
+				30B873B524F87EEE00421A9B /* ProfileView.swift in Sources */,
+				30B873B024F8524900421A9B /* BottomTabView.swift in Sources */,
+				3050CCD324F90A7200257FFE /* ConfirmTagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +826,10 @@
 		};
 		30EF14A624DBBE4A00200A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284791A42ADE924660B61972 /* Pods-LemmeHelpV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LemmeHelpV2/LemmeHelpV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LemmeHelpV2/Preview Content\"";
 				DEVELOPMENT_TEAM = F6HF4R7G4W;
@@ -452,8 +848,10 @@
 		};
 		30EF14A724DBBE4A00200A50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9C17D0FA4B9A5726C1CE86 /* Pods-LemmeHelpV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LemmeHelpV2/LemmeHelpV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LemmeHelpV2/Preview Content\"";
 				DEVELOPMENT_TEAM = F6HF4R7G4W;
@@ -472,6 +870,7 @@
 		};
 		30EF14A924DBBE4A00200A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F134FC88E3DAAD8DB167813 /* Pods-LemmeHelpV2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +893,7 @@
 		};
 		30EF14AA24DBBE4A00200A50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F89DB25F58CCE86CC6BEAFC /* Pods-LemmeHelpV2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +916,7 @@
 		};
 		30EF14AC24DBBE4A00200A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 144C764AD2A37B403334FB2E /* Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +937,7 @@
 		};
 		30EF14AD24DBBE4A00200A50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96E9C3AD5741A49348FBA89 /* Pods-LemmeHelpV2-LemmeHelpV2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
