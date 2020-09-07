@@ -38,6 +38,7 @@
 		30B873BD24F8EF0B00421A9B /* ChatThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */; };
 		30B873BF24F8EF1A00421A9B /* OrderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */; };
 		30B873C124F8EF2800421A9B /* ShopifyActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */; };
+		30BE13C32505F159006B5C72 /* ResolveTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE13C22505F159006B5C72 /* ResolveTicketView.swift */; };
 		30D584842504DE010090EF48 /* CreateAndViewTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D584832504DE010090EF48 /* CreateAndViewTags.swift */; };
 		30EF147F24DBBE4700200A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF147E24DBBE4700200A50 /* AppDelegate.swift */; };
 		30EF148124DBBE4700200A50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148024DBBE4700200A50 /* SceneDelegate.swift */; };
@@ -106,6 +107,7 @@
 		30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatThreadView.swift; sourceTree = "<group>"; };
 		30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
 		30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopifyActionsView.swift; sourceTree = "<group>"; };
+		30BE13C22505F159006B5C72 /* ResolveTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveTicketView.swift; sourceTree = "<group>"; };
 		30D584832504DE010090EF48 /* CreateAndViewTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndViewTags.swift; sourceTree = "<group>"; };
 		30EF147B24DBBE4700200A50 /* LemmeHelpV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemmeHelpV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF147E24DBBE4700200A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */,
 				3048010424F90DEF003D1205 /* FloatingTabBar.swift */,
 				3039794F25050599004B91F9 /* AddTagView.swift */,
+				30BE13C22505F159006B5C72 /* ResolveTicketView.swift */,
 				3071168224F104910085C29E /* ChatRow.swift */,
 				30B873AB24F8459800421A9B /* EnterAResponseView.swift */,
 				30B6D9AD24F3A90E0087E28F /* SuggestedResponseRow.swift */,
@@ -646,6 +649,7 @@
 				3048010B24F9BF48003D1205 /* ContentView.swift in Sources */,
 				30B6D9AE24F3A90E0087E28F /* SuggestedResponseRow.swift in Sources */,
 				3048010524F90DEF003D1205 /* FloatingTabBar.swift in Sources */,
+				30BE13C32505F159006B5C72 /* ResolveTicketView.swift in Sources */,
 				304E7F1124F12E5300E9E76D /* SessionStore.swift in Sources */,
 				309C92B824F2023D000510EA /* MyTicketRow.swift in Sources */,
 				30B873AC24F8459800421A9B /* EnterAResponseView.swift in Sources */,

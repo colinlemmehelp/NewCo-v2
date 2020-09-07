@@ -14,6 +14,7 @@ struct ChatView: View {
     @EnvironmentObject var session: SessionStore
     @ObservedObject private var viewModel = ChatsViewModel()
     @ObservedObject private var ticketsViewModel = TicketsViewModel()
+    
 
     @State var bindingExample : String = "bindingID"
     @State var response : String = ""
@@ -53,14 +54,16 @@ struct ChatView: View {
             //to scroll automatically to a position, use ios 14
             //https://stackoverflow.com/questions/57121782/scroll-swiftui-list-to-new-selection
             
-            ChatHeaderView(ticketID: $ticketID, agentTag: $agentTag)
+            ChatHeaderView(ticketID: $ticketID, agentTag: ticketsViewModel.ticketByID.agentTag)
             ContentView(bindingExample: $bindingExample, response: $response, ticketID: $ticketID, autoTag: $autoTag, agentTag: $agentTag, isAutoTagCorrect: $isAutoTagCorrect)
 //            Spacer()
 //            ContentView(module: $module, response: $response, ticketID: $ticketID)
 //            Spacer()
 //            useSelectedModule(module: self.module)
 
-        }
+        }.onAppear(perform: {
+            self.ticketsViewModel.getTicketByID(ticketID: self.ticketID)
+        })
         .navigationBarTitle(Text(""))
         .navigationBarHidden(true)
     }

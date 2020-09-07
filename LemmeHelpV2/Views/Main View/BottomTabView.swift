@@ -55,6 +55,7 @@ struct BottomTabView: View {
                 Spacer()
         }.padding(.top, 10)
         .padding(.bottom, 60)
+        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 

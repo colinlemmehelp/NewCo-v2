@@ -10,24 +10,22 @@ import SwiftUI
 
 struct NewTicketsBannerView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack(alignment: .bottom) {
-                VStack(alignment: .leading) {
-                    Text("Tickets").foregroundColor(Color.gray).font(.body)
-                    Text("Unassigned").font(.title).fontWeight(.semibold)
-                }
-                Spacer()
-                VStack(alignment: .trailing) {
-                    Image(systemName: "questionmark.circle").font(.headline)
-                        .foregroundColor(Color.red.opacity(0.5)).padding(.trailing,6)
-                    HStack(alignment: .bottom) {
-                        HStack {
-                            Image(systemName: "line.horizontal.3.decrease.circle")
-                            Text("Filter")
-                            }.padding(8)
-                            .font(.headline)
-                            .foregroundColor(Color.blue)
-                    }
+        HStack(alignment: .bottom) {
+            VStack(alignment: .leading) {
+                Text("Tickets").foregroundColor(Color.gray).font(.body)
+                Text("Unassigned").font(.title).fontWeight(.semibold)
+            }
+            Spacer()
+            VStack(alignment: .trailing) {
+                Image(systemName: "questionmark.circle").font(.headline)
+                    .foregroundColor(Color.red.opacity(0.5)).padding(.trailing,6)
+                HStack(alignment: .bottom) {
+                    HStack {
+                        Image(systemName: "line.horizontal.3.decrease.circle")
+                        Text("Filter")
+                        }.padding(8)
+                        .font(.headline)
+                        .foregroundColor(Color.blue)
                 }
             }
         }
@@ -35,6 +33,7 @@ struct NewTicketsBannerView: View {
         .padding(.bottom, 12)
         .padding(.horizontal, 20)
         .background(Color("newPrimaryColor"))
+        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 

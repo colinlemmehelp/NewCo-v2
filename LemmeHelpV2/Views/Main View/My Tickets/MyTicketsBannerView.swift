@@ -20,14 +20,15 @@ struct MyTicketsBannerView: View {
                 VStack(alignment: .trailing) {
                     Image(systemName: "questionmark.circle").font(.headline)
                         .foregroundColor(Color.red.opacity(0.5)).padding(.trailing,6)
-                    HStack(alignment: .bottom) {
-                        HStack {
-                            Image(systemName: "line.horizontal.3.decrease.circle")
-                            Text("Filter")
-                            }.padding(8)
-                            .font(.headline)
-                            .foregroundColor(Color.blue)
-                    }
+                    Text("   ")
+//                    HStack(alignment: .bottom) {
+//                        HStack {
+//                            Image(systemName: "line.horizontal.3.decrease.circle")
+//                            Text("Filter")
+//                            }.padding(8)
+//                            .font(.headline)
+//                            .foregroundColor(Color.blue)
+//                    }
                 }
             }
         }

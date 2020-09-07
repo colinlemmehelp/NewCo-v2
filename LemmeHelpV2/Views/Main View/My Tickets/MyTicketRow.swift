@@ -36,21 +36,21 @@ struct MyTicketRow: View {
             Spacer(minLength: 12)
             VStack(alignment: .leading) {
                 HStack {
-                    Image(systemName: "photo").font(.headline)
                     Text(name).font(.headline)
                     Spacer()
                     Text(latestTimestamp)
                         .font(.subheadline)
-                }
+                }.padding(.bottom, 8)
                 Text(latestMessage)
-                    .font(.body)
+                    .font(.body).padding(.bottom, 8)
+                HStack {
+                    Text("Bonobos").font(.subheadline).foregroundColor(Color.gray)
+                    Spacer()
+                }
             }
         }.padding(8)
-            .background(RoundedRectangle(cornerRadius: 5).fill(Color("newPrimaryColor"))).padding(8)
-                
-            .clipped()
-            .shadow(color: Color("newPrimaryColor"), radius: 2, x: 1, y: 1)
-            
+            .background(Color.white)
+
     }
 }
 

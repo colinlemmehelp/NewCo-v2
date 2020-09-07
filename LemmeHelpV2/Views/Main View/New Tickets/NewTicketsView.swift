@@ -19,41 +19,36 @@ struct NewTicketsView: View {
 
     
     var body: some View {
-        Group{
+        GeometryReader { geometry in
             NavigationView {
                 VStack {
                     NewTicketsBannerView()
-                    
-                    List {
-                        ForEach(viewModel.newTickets) { ticket in
-                            NavigationLink(destination: ChatView(ticketID: ticket.ticketID, autoTag: ticket.autoTag, agentTag: ticket.agentTag, isAutoTagCorrect: ticket.isAutoTagCorrect, customerName: ticket.name)) {
-                                NewTicketRow(ticketID: ticket.ticketID, name: ticket.name, question: ticket.question, timestamp: ticket.latestTimestamp)
+                    ScrollView {
+                        VStack (spacing: 0) {
+                            ForEach(self.viewModel.newTickets) { ticket in
+                                NavigationLink(destination: ChatView(ticketID: ticket.ticketID, autoTag: ticket.autoTag, agentTag: ticket.agentTag, isAutoTagCorrect: ticket.isAutoTagCorrect, customerName: ticket.name)) {
+                                    NewTicketRow(ticketID: ticket.ticketID, name: ticket.name, question: ticket.question, timestamp: ticket.timestamp, autoTag: ticket.autoTag)
+                                }.buttonStyle(PlainButtonStyle())
                             }
-                            
-                            
-//                            ChatView(ticketID: ticket.ticketID, customerName: ticket.name, autoTag: ticket.autoTag, agentTag: ticket.agentTag)) {
-//
-//                            }
                         }
-                    }
-                    BottomTabView(selection: $selection)
+                        Rectangle().frame(width: geometry.size.width, height: 0.01)
+                    }.background(Color.gray.opacity(0.1))
+                    BottomTabView(selection: self.$selection)
                 }.navigationBarTitle(Text(""))
                 .navigationBarHidden(true)
             }
-        }.onAppear(perform: {
+            .onAppear(perform: {
             self.viewModel.fetchTickets()
             })
+        }.edgesIgnoringSafeArea([.top, .bottom])
+        
     }
 }
-
-//struct NewTicketsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NewTicketsView()
-//    }
-//}
 
 struct NewTicketsView_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        NewTicketsView(selection: .constant(.newTicketsTab))
     }
 }
+
+

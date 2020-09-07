@@ -14,7 +14,7 @@ struct ChatHeaderView: View {
     @ObservedObject private var viewModel = TicketsViewModel()
 
     @Binding var ticketID:String
-    @Binding var agentTag:String
+    var agentTag:String
     
     var pageName = "Page Name"
     

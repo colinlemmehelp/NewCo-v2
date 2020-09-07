@@ -35,7 +35,6 @@ struct MyTicketsView: View {
                 .navigationBarHidden(true)
             }
         }.onAppear(perform: {
-            print("back reloading this page again!")
             self.viewModel.getTicketsForAgent(agentID: self.session.session!.uid)
             })
     }

@@ -37,12 +37,16 @@ struct ChatThreadView: View {
                     Spacer()
                     Text("Order >").font(.footnote).foregroundColor(Color.gray)
                 }.padding(.horizontal, 12)
-//                ChatModuleSwitcher(module: $module)
-                List {
-                    ForEach(viewModel.chats) { chat in
-                        ChatRow(name: chat.name, chat: chat.chat, timestamp: chat.timestamp)
+                GeometryReader { geometry in
+                    ScrollView {
+                        VStack(spacing: 0) {
+                            ForEach(self.viewModel.chats) { chat in
+                                ChatRow(name: chat.name, chat: chat.chat, timestamp: chat.timestamp)
+                            }
+                            Spacer()
+                        }
+                        Rectangle().frame(width: geometry.size.width, height: 0.01)
                     }
-                    Spacer()
                 }
 //                .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local).onEnded({
 //                    value in

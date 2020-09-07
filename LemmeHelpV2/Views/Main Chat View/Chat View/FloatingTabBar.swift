@@ -47,6 +47,8 @@ struct FloatingTB: View {
     @Binding var ticketID: String
     @State var expand = false
     @State var showingDetail = false
+    @State var showingResolve = false
+    @State var showingSnippet = false
     
     var body: some View {
         
@@ -62,22 +64,14 @@ struct FloatingTB: View {
                 } else {
                     Button(action: {
                         self.selected = 0
+                        self.showingResolve.toggle()
                     }) {
                         VStack{
                             Image(systemName: "checkmark").padding(.horizontal)
                             Text("Close").font(.caption)
                         }.foregroundColor(self.selected == 0 ? .black : .gray)
-                    }
-                    
-                    Spacer(minLength: 16)
-                    
-                    Button(action: {
-                        self.selected = 1
-                    }) {
-                        VStack{
-                            Image(systemName: "flag").padding(.horizontal)
-                            Text("Flag").font(.caption)
-                        }.foregroundColor(self.selected == 1 ? .red : .gray)
+                    }.sheet(isPresented: $showingResolve) {
+                        ResolveTicketView(ticketID: self.$ticketID, showingResolve: self.$showingResolve)
                     }
                     
                     Spacer(minLength: 16)

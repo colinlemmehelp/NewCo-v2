@@ -28,6 +28,7 @@ class TicketsViewModel: ObservableObject {
     @Published var keywordTickets = [Ticket]()
     @Published var autoTagTickets = [Ticket]()
     @Published var agentTagTickets = [Ticket]()
+    @Published var ticketByID = Ticket(id: "", ticketID: "", name: "", question: "", timestamp: "", latestTimestamp: "", isUnread: false, latestMessage: "", autoTag: "", agentTag: "", isAutoTagCorrect: true)
 
     
     private var db = Firestore.firestore()
@@ -50,14 +51,13 @@ class TicketsViewModel: ObservableObject {
 //    }
     
     func fetchTickets() {
-        db.collection("tickets").whereField("agentID", isEqualTo: "").order(by: "timestamp", descending: true).addSnapshotListener { (querySnapshot, error) in
+        db.collection("tickets").whereField("agentID", isEqualTo: "").order(by: "timestamp", descending: true).getDocuments { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("No documents")
                 return
             }
             self.newTickets = documents.map { (queryDocumentSnapshot) -> Ticket in
                 let data = queryDocumentSnapshot.data()
-                print(data)
                 let name = data["name"] as? String ?? ""
                 let question = data["question"] as? String ?? ""
                 let autoTag = data["autoTag"] as? String ?? ""
@@ -66,10 +66,8 @@ class TicketsViewModel: ObservableObject {
                 
                 let isUnread = data["isUnread"] as? Bool ?? false
                 let latestMessage = data["latestMessage"] as? String ?? ""
-                print(name)
                 let timestamp: Timestamp = data["timestamp"] as! Timestamp
                 //let latestTimestamp: Timestamp = data["latestTimestamp"] as! Timestamp
-                print(timestamp)
                 //print(latestTimestamp)
                 
                 let date: Date = timestamp.dateValue()
@@ -92,7 +90,7 @@ class TicketsViewModel: ObservableObject {
     
     func getTicketsForAgent(agentID: String) {
         db.collection("tickets").whereField("agentID", isEqualTo: agentID).order(by: "latestTimestamp", descending: true)
-            .addSnapshotListener { (querySnapshot, error) in
+            .getDocuments { (querySnapshot, error) in
         
                 guard let documents = querySnapshot?.documents else {
                     print("No documents")
@@ -130,6 +128,47 @@ class TicketsViewModel: ObservableObject {
                     
                     return Ticket(ticketID: ticketID, name: name, question: question, timestamp: textOfTimestamp, latestTimestamp: textOfLatestTimestamp, isUnread: isUnread, latestMessage: latestMessage, autoTag: autoTag, agentTag: agentTag, isAutoTagCorrect: isAutoTagCorrect)
                 }
+        }
+    }
+    
+    func getTicketByID (ticketID: String) {
+        db.collection("tickets").document(ticketID)
+            .addSnapshotListener { (documentSnapshot, error) in
+        
+                guard let document = documentSnapshot else {
+                    print("Error fetching document: \(error!)")
+                    return
+                }
+                guard let data = document.data() else {
+                    print("Document was empty")
+                    return
+                }
+                print("Current data: \(data)")
+                
+                let name = data["name"] as? String ?? ""
+                let question = data["question"] as? String ?? ""
+                let autoTag = data["autoTag"] as? String ?? ""
+                let agentTag = data["agentTag"] as? String ?? ""
+                let isAutoTagCorrect = data["isAutoTagCorrect"] as? Bool ?? false
+                
+                let isUnread = data["isUnread"] as? Bool ?? false
+                let latestMessage = data["latestMessage"] as? String ?? ""
+                
+                let timestamp: Timestamp = data["timestamp"] as! Timestamp
+                let latestTimestamp: Timestamp = data["latestTimestamp"] as! Timestamp
+                
+                let date: Date = timestamp.dateValue()
+                let formatter1 = DateFormatter()
+                formatter1.dateFormat = "MMM d, h:mm a"
+                let textOfTimestamp = formatter1.string(from: date)
+                
+                let latestDate: Date = latestTimestamp.dateValue()
+                let formatter2 = DateFormatter()
+                formatter2.dateFormat = "MMM d, h:mm a"
+                let textOfLatestTimestamp = formatter2.string(from: latestDate)
+                                
+                self.ticketByID = Ticket(ticketID: "NULL", name: name, question: question, timestamp: textOfTimestamp, latestTimestamp: textOfLatestTimestamp, isUnread: isUnread, latestMessage: latestMessage, autoTag: autoTag, agentTag: agentTag, isAutoTagCorrect: isAutoTagCorrect)
+
         }
     }
     
@@ -210,7 +249,6 @@ class TicketsViewModel: ObservableObject {
                     
                     let ticketID = queryDocumentSnapshot.reference.documentID
                     
-                    print(date)
                     
                     return Ticket(ticketID: ticketID, name: name, question: question, timestamp: textOfTimestamp, latestTimestamp: textOfLatestTimestamp, isUnread: isUnread, latestMessage: latestMessage, autoTag: autoTag, agentTag: agentTag, isAutoTagCorrect: isAutoTagCorrect)
                 }
@@ -252,7 +290,6 @@ class TicketsViewModel: ObservableObject {
                        
                        let ticketID = queryDocumentSnapshot.reference.documentID
                        
-                       print(date)
                        
                        return Ticket(ticketID: ticketID, name: name, question: question, timestamp: textOfTimestamp, latestTimestamp: textOfLatestTimestamp, isUnread: isUnread, latestMessage: latestMessage, autoTag: autoTag, agentTag: agentTag, isAutoTagCorrect: isAutoTagCorrect)
                    }
