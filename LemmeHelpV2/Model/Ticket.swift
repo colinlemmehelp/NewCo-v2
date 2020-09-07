@@ -27,14 +27,8 @@ struct Ticket: Identifiable {
     var autoTag: String
     var agentTag: String
     var isAutoTagCorrect: Bool
-    
-//    enum CodingKeys: String, CodingKey {
-//        case name
-//        case question
-//        case timestamp
-//        //case timestamp = "date"
-//        //note: we don't need to do this now, but can use later if we want to mess with naming conventions
-//    }
+    var status: String
+    var rating: Int
 }
 
 
@@ -43,7 +37,7 @@ struct Ticket: Identifiable {
 let ticketNow = Date()
 
 let testData = [
-    Ticket(id: "fakeUUID", ticketID: "fakeIdhere", name: "Colin", question: "I hate returning to your site, I'm going to cancel!", timestamp: "12:15am", latestTimestamp: "12:00pm", isUnread: true, latestMessage: "", autoTag: "return", agentTag: "cancel", isAutoTagCorrect: false)
+    Ticket(id: "fakeUUID", ticketID: "fakeIdhere", name: "Colin", question: "I hate returning to your site, I'm going to cancel!", timestamp: "12:15am", latestTimestamp: "12:00pm", isUnread: true, latestMessage: "", autoTag: "return", agentTag: "cancel", isAutoTagCorrect: false, status: "OPEN", rating: 5)
 ]
 #endif
 

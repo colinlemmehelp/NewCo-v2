@@ -24,7 +24,7 @@ struct MyTicketsView: View {
                     List {
                         ForEach(viewModel.myTickets) { ticket in
                             NavigationLink(destination: ChatView(ticketID: ticket.ticketID, autoTag: ticket.autoTag, agentTag: ticket.agentTag, isAutoTagCorrect: ticket.isAutoTagCorrect, customerName: ticket.name)) {
-                                MyTicketRow(ticketID: ticket.ticketID, name: ticket.name, question: ticket.question, latestTimestamp: ticket.latestTimestamp, isUnread: ticket.isUnread, latestMessage: ticket.latestMessage)
+                                MyTicketRow(ticketID: ticket.ticketID, name: ticket.name, question: ticket.question, latestTimestamp: ticket.latestTimestamp, isUnread: ticket.isUnread, latestMessage: ticket.latestMessage, status: ticket.status)
                                 //isAutoTagCorrect: ticket.isAutoTagCorrect,
                             }
                         }

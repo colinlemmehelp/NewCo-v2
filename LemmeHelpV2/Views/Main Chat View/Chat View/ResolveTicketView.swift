@@ -15,11 +15,22 @@ struct ResolveTicketView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                Text("Resolve Ticket").font(.largeTitle)
+                Spacer()
+            }
+            Text("Tapping Resolve will end this conversation. Please make sure you have asked the customer if they have any other questions you might help with.").font(.headline)
+            Text("The customer will receive a survey to review this conversation").font(.headline)
             Button(action: {
-                self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "return")
+                self.viewModel.resolveTicket(ticketID: self.ticketID, rating: 3)
                 self.showingResolve.toggle()
             }) {
-                Text("return")
+                Text("Resolve").font(.largeTitle)
+                    .padding(12)
+                .foregroundColor(Color.blue)
+                .background(RoundedRectangle(cornerRadius: 7).fill(Color.blue.opacity(0.1)))
+                .background(RoundedRectangle(cornerRadius: 7).strokeBorder(Color.blue, lineWidth: 2))
             }
         }
         

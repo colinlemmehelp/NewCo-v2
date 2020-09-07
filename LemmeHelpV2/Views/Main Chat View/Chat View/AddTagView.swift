@@ -17,31 +17,63 @@ struct AddTagView: View {
     
     var body: some View {
         VStack {
-            Button(action: {
-                self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "return")
-                self.showingDetail.toggle()
-            }) {
-                Text("return")
+            Spacer()
+            HStack {
+                Spacer()
+                Text("Select a tag").font(.largeTitle)
+                Spacer()
             }
-            Button(action: {
-                self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "cancel")
-                self.showingDetail.toggle()
-            }) {
-                Text("cancel")
-            }
-            Button(action: {
-                self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "shipping")
-                self.showingDetail.toggle()
-            }) {
-                Text("shipping")
-            }
+            HStack {
+                Button(action: {
+                    self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "return")
+                    self.showingDetail.toggle()
+                }) {
+                    Text("return").font(.title)
+                        .padding(12)
+                        .foregroundColor(Color.blue)
+                        .background(RoundedRectangle(cornerRadius: 7).fill(Color.blue.opacity(0.1)))
+                        .background(RoundedRectangle(cornerRadius: 7).strokeBorder(Color.blue, lineWidth: 2))
+                }
+                Spacer()
+                Button(action: {
+                    self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "cancel")
+                    self.showingDetail.toggle()
+                }) {
+                    Text("cancel").font(.title)
+                        .padding(12)
+                        .foregroundColor(Color.blue)
+                        .background(RoundedRectangle(cornerRadius: 7).fill(Color.blue.opacity(0.1)))
+                        .background(RoundedRectangle(cornerRadius: 7).strokeBorder(Color.blue, lineWidth: 2))
+                }
+                Spacer()
+                Spacer()
+            }.padding(.horizontal, 30)
+                .padding(.top, 40)
+                .padding(.bottom, 20)
+            
+            HStack {
+                Button(action: {
+                    self.viewModel.updateAgentTag(ticketID: self.ticketID, agentTag: "shipping")
+                    self.showingDetail.toggle()
+                }) {
+                    Text("shipping").font(.title)
+                        .padding(12)
+                        .foregroundColor(Color.blue)
+                        .background(RoundedRectangle(cornerRadius: 7).fill(Color.blue.opacity(0.1)))
+                        .background(RoundedRectangle(cornerRadius: 7).strokeBorder(Color.blue, lineWidth: 2))
+                }
+                Spacer()
+            }.padding(.horizontal, 30)
+            Spacer()
+            Spacer()
+
         }
         
     }
 }
 
-//struct AddTagView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AddTagView()
-//    }
-//}
+struct AddTagView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddTagView(ticketID: .constant("abc123"), showingDetail: .constant(true))
+    }
+}

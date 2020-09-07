@@ -15,6 +15,8 @@ struct ChatHeaderView: View {
 
     @Binding var ticketID:String
     var agentTag:String
+    var companyName:String
+    var name:String
     
     var pageName = "Page Name"
     
@@ -36,8 +38,8 @@ struct ChatHeaderView: View {
                 }.padding(.trailing, 12)
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading) {
-                        Text("Bonobos").foregroundColor(Color.gray).font(.body)
-                        Text("Kyle Laracey").font(.title).fontWeight(.semibold)
+                        Text(companyName).foregroundColor(Color.gray).font(.body)
+                        Text(name).font(.title).fontWeight(.semibold)
                     }
                     Spacer()
                 }

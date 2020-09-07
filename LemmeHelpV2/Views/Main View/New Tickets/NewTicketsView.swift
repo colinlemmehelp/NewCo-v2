@@ -15,7 +15,8 @@ struct NewTicketsView: View {
     
     @Binding var selection: TicketView.SelectedTab
 
-    
+    //MAYBE ADD FORCE TOUCH IN THE FUTURE? FOR QUICK AUTO ASSIGNMENTS?
+    //https://www.youtube.com/watch?v=7f6w-alJvSw
 
     
     var body: some View {

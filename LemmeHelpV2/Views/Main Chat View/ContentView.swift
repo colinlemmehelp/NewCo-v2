@@ -15,6 +15,9 @@ import SwiftUI
 //VIDEO ON HOW TO DO THIS
 //https://www.youtube.com/watch?v=hr_B03mabYo
 
+//BETTER IDEA ON HOW TO DO THIS
+//https://www.youtube.com/watch?v=BK-8Ddtoa_w
+
 struct ContentView: View {
     @Binding var bindingExample: String
     @Binding var response: String

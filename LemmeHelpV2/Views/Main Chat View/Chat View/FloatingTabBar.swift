@@ -34,11 +34,6 @@ struct FloatingTabBar: View {
     }
 }
 
-//struct FloatingTabBar_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FloatingTabBar()
-//    }
-//}
 
 
 struct FloatingTB: View {

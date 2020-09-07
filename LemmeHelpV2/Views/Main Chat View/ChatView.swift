@@ -54,7 +54,7 @@ struct ChatView: View {
             //to scroll automatically to a position, use ios 14
             //https://stackoverflow.com/questions/57121782/scroll-swiftui-list-to-new-selection
             
-            ChatHeaderView(ticketID: $ticketID, agentTag: ticketsViewModel.ticketByID.agentTag)
+            ChatHeaderView(ticketID: $ticketID, agentTag: ticketsViewModel.ticketByID.agentTag, companyName: "Bonobos", name: ticketsViewModel.ticketByID.name)
             ContentView(bindingExample: $bindingExample, response: $response, ticketID: $ticketID, autoTag: $autoTag, agentTag: $agentTag, isAutoTagCorrect: $isAutoTagCorrect)
 //            Spacer()
 //            ContentView(module: $module, response: $response, ticketID: $ticketID)

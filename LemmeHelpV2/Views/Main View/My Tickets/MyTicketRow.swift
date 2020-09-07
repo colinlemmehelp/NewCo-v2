@@ -17,9 +17,15 @@ struct MyTicketRow: View {
     var latestTimestamp: String
     var isUnread: Bool
     var latestMessage: String
+    var status: String
     
     var body: some View {
         HStack {
+            if (status == "CLOSED") {
+                Spacer()
+                Text("Closed").foregroundColor(Color.red)
+                Spacer()
+            }
             VStack(alignment: .center) {
                 if isUnread {
                     Image(systemName: "circle.fill")
@@ -57,6 +63,6 @@ struct MyTicketRow: View {
 struct MyTicketRow_Previews: PreviewProvider {
     
     static var previews: some View {
-        MyTicketRow(ticketID: "abcdef", name: "test string", question: "question example", latestTimestamp: "test123", isUnread: true, latestMessage: "temp latest message")
+        MyTicketRow(ticketID: "abcdef", name: "test string", question: "question example", latestTimestamp: "test123", isUnread: true, latestMessage: "temp latest message", status: "OPEN")
     }
 }
