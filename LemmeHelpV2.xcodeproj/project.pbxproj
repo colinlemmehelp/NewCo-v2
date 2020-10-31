@@ -7,42 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30097AE42547DBE3001E0B4D /* AutotagBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30097AE32547DBE3001E0B4D /* AutotagBubble.swift */; };
+		30097AE92547DE02001E0B4D /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30097AE82547DE02001E0B4D /* MessageHeader.swift */; };
 		3039795025050599004B91F9 /* AddTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039794F25050599004B91F9 /* AddTagView.swift */; };
 		30397952250507CE004B91F9 /* ViewTagPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30397951250507CE004B91F9 /* ViewTagPerformance.swift */; };
 		3039795425051061004B91F9 /* ProfileBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039795325051061004B91F9 /* ProfileBannerView.swift */; };
 		3048010524F90DEF003D1205 /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048010424F90DEF003D1205 /* FloatingTabBar.swift */; };
 		3048010924F9B553003D1205 /* MyTicketsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048010824F9B553003D1205 /* MyTicketsBannerView.swift */; };
 		3048010B24F9BF48003D1205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048010A24F9BF48003D1205 /* ContentView.swift */; };
-		304AC0B524F148B100465D9A /* TicketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304AC0B424F148B100465D9A /* TicketsViewModel.swift */; };
+		304AC0B524F148B100465D9A /* TicketsViewModelv1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304AC0B424F148B100465D9A /* TicketsViewModelv1.swift */; };
 		304E7F0F24F124AD00E9E76D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E7F0E24F124AD00E9E76D /* LoginView.swift */; };
 		304E7F1124F12E5300E9E76D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E7F1024F12E5300E9E76D /* SessionStore.swift */; };
 		3050CCD324F90A7200257FFE /* ConfirmTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050CCD224F90A7200257FFE /* ConfirmTagView.swift */; };
 		306E78D425052F2C0021456B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E78D325052F2C0021456B /* PushNotificationManager.swift */; };
-		3071167F24F0F1D00085C29E /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071167E24F0F1D00085C29E /* Ticket.swift */; };
+		3071167F24F0F1D00085C29E /* TicketV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071167E24F0F1D00085C29E /* TicketV1.swift */; };
 		3071168124F103210085C29E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168024F103210085C29E /* ChatView.swift */; };
 		3071168324F104910085C29E /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168224F104910085C29E /* ChatRow.swift */; };
-		3071168524F106F40085C29E /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168424F106F40085C29E /* Chat.swift */; };
+		3071168524F106F40085C29E /* ChatV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168424F106F40085C29E /* ChatV1.swift */; };
 		3071168724F11BE20085C29E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3071168624F11BE20085C29E /* GoogleService-Info.plist */; };
-		309C92AF24F166B9000510EA /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92AE24F166B9000510EA /* ChatsViewModel.swift */; };
+		309C92AF24F166B9000510EA /* ChatsViewModelv1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92AE24F166B9000510EA /* ChatsViewModelv1.swift */; };
 		309C92B624F20226000510EA /* MyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B524F20226000510EA /* MyTicketsView.swift */; };
-		309C92B824F2023D000510EA /* MyTicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B724F2023D000510EA /* MyTicketRow.swift */; };
+		309C92B824F2023D000510EA /* MyTicketRow1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B724F2023D000510EA /* MyTicketRow1.swift */; };
 		309C92BA24F2078C000510EA /* NewTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C92B924F2078C000510EA /* NewTicketsView.swift */; };
 		30B6D9AE24F3A90E0087E28F /* SuggestedResponseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6D9AD24F3A90E0087E28F /* SuggestedResponseRow.swift */; };
 		30B6D9B024F3B4930087E28F /* SuggestedArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6D9AF24F3B4930087E28F /* SuggestedArticleRow.swift */; };
 		30B873AC24F8459800421A9B /* EnterAResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873AB24F8459800421A9B /* EnterAResponseView.swift */; };
 		30B873B024F8524900421A9B /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873AF24F8524900421A9B /* BottomTabView.swift */; };
 		30B873B224F87D3000421A9B /* NewTicketsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B124F87D3000421A9B /* NewTicketsBannerView.swift */; };
-		30B873B524F87EEE00421A9B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B424F87EEE00421A9B /* ProfileView.swift */; };
+		30B873B524F87EEE00421A9B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B424F87EEE00421A9B /* Profile.swift */; };
 		30B873B724F8A0EF00421A9B /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873B624F8A0EF00421A9B /* ChatHeaderView.swift */; };
 		30B873BB24F8E6D300421A9B /* ChatModuleSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BA24F8E6D300421A9B /* ChatModuleSwitcher.swift */; };
 		30B873BD24F8EF0B00421A9B /* ChatThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */; };
 		30B873BF24F8EF1A00421A9B /* OrderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */; };
 		30B873C124F8EF2800421A9B /* ShopifyActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */; };
+		30BC2B192541B24B006C1C4C /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC2B182541B24B006C1C4C /* Ticket.swift */; };
+		30BC2B1E2541B60C006C1C4C /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC2B1D2541B60C006C1C4C /* TicketViewModel.swift */; };
 		30BE13C32505F159006B5C72 /* ResolveTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE13C22505F159006B5C72 /* ResolveTicketView.swift */; };
+		30BE2B512544CF960078D988 /* ShopifyOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE2B502544CF960078D988 /* ShopifyOrder.swift */; };
 		30D584842504DE010090EF48 /* CreateAndViewTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D584832504DE010090EF48 /* CreateAndViewTags.swift */; };
+		30DA96A32541F888004EFD39 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96A22541F888004EFD39 /* TabsView.swift */; };
+		30DA96A82541FBC8004EFD39 /* OpenTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96A72541FBC8004EFD39 /* OpenTickets.swift */; };
+		30DA96AD2541FE00004EFD39 /* MyTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96AC2541FE00004EFD39 /* MyTickets.swift */; };
+		30DA96BC25420348004EFD39 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96BB25420348004EFD39 /* Messenger.swift */; };
+		30DA96C725422414004EFD39 /* OpenTicketsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96C625422414004EFD39 /* OpenTicketsRow.swift */; };
+		30DA96CC254224DC004EFD39 /* MyTicketsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96CB254224DC004EFD39 /* MyTicketsRow.swift */; };
+		30DA96DA25422985004EFD39 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96D925422985004EFD39 /* MessageBubble.swift */; };
+		30DA96DF254229AD004EFD39 /* MagicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96DE254229AD004EFD39 /* MagicTextField.swift */; };
+		30DA96FC25422D5B004EFD39 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA96FB25422D5B004EFD39 /* Message.swift */; };
+		30DA9704254236EB004EFD39 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DA9703254236EB004EFD39 /* MessageViewModel.swift */; };
 		30EF147F24DBBE4700200A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF147E24DBBE4700200A50 /* AppDelegate.swift */; };
 		30EF148124DBBE4700200A50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148024DBBE4700200A50 /* SceneDelegate.swift */; };
-		30EF148324DBBE4700200A50 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148224DBBE4700200A50 /* TicketView.swift */; };
+		30EF148324DBBE4700200A50 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF148224DBBE4700200A50 /* RouterView.swift */; };
 		30EF148524DBBE4900200A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF148424DBBE4900200A50 /* Assets.xcassets */; };
 		30EF148824DBBE4900200A50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF148724DBBE4900200A50 /* Preview Assets.xcassets */; };
 		30EF148B24DBBE4900200A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EF148924DBBE4900200A50 /* LaunchScreen.storyboard */; };
@@ -75,44 +90,59 @@
 		144C764AD2A37B403334FB2E /* Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2-LemmeHelpV2UITests/Pods-LemmeHelpV2-LemmeHelpV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		284791A42ADE924660B61972 /* Pods-LemmeHelpV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2.debug.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2/Pods-LemmeHelpV2.debug.xcconfig"; sourceTree = "<group>"; };
 		2F134FC88E3DAAD8DB167813 /* Pods-LemmeHelpV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemmeHelpV2Tests.debug.xcconfig"; path = "Target Support Files/Pods-LemmeHelpV2Tests/Pods-LemmeHelpV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		30097AE32547DBE3001E0B4D /* AutotagBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutotagBubble.swift; sourceTree = "<group>"; };
+		30097AE82547DE02001E0B4D /* MessageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHeader.swift; sourceTree = "<group>"; };
 		3039794F25050599004B91F9 /* AddTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagView.swift; sourceTree = "<group>"; };
 		30397951250507CE004B91F9 /* ViewTagPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTagPerformance.swift; sourceTree = "<group>"; };
 		3039795325051061004B91F9 /* ProfileBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBannerView.swift; sourceTree = "<group>"; };
 		3048010424F90DEF003D1205 /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
 		3048010824F9B553003D1205 /* MyTicketsBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsBannerView.swift; sourceTree = "<group>"; };
 		3048010A24F9BF48003D1205 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		304AC0B424F148B100465D9A /* TicketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewModel.swift; sourceTree = "<group>"; };
+		304AC0B424F148B100465D9A /* TicketsViewModelv1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewModelv1.swift; sourceTree = "<group>"; };
 		304E7F0E24F124AD00E9E76D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		304E7F1024F12E5300E9E76D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		3050CCD224F90A7200257FFE /* ConfirmTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTagView.swift; sourceTree = "<group>"; };
 		306E78D225052A930021456B /* LemmeHelpV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LemmeHelpV2.entitlements; sourceTree = "<group>"; };
 		306E78D325052F2C0021456B /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
-		3071167E24F0F1D00085C29E /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		3071167E24F0F1D00085C29E /* TicketV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketV1.swift; sourceTree = "<group>"; };
 		3071168024F103210085C29E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		3071168224F104910085C29E /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
-		3071168424F106F40085C29E /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		3071168424F106F40085C29E /* ChatV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatV1.swift; sourceTree = "<group>"; };
 		3071168624F11BE20085C29E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		309C92AE24F166B9000510EA /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
+		309C92AE24F166B9000510EA /* ChatsViewModelv1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModelv1.swift; sourceTree = "<group>"; };
 		309C92B524F20226000510EA /* MyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsView.swift; sourceTree = "<group>"; };
-		309C92B724F2023D000510EA /* MyTicketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketRow.swift; sourceTree = "<group>"; };
+		309C92B724F2023D000510EA /* MyTicketRow1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketRow1.swift; sourceTree = "<group>"; };
 		309C92B924F2078C000510EA /* NewTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTicketsView.swift; sourceTree = "<group>"; };
 		30B6D9AD24F3A90E0087E28F /* SuggestedResponseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedResponseRow.swift; sourceTree = "<group>"; };
 		30B6D9AF24F3B4930087E28F /* SuggestedArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedArticleRow.swift; sourceTree = "<group>"; };
 		30B873AB24F8459800421A9B /* EnterAResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAResponseView.swift; sourceTree = "<group>"; };
 		30B873AF24F8524900421A9B /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
 		30B873B124F87D3000421A9B /* NewTicketsBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTicketsBannerView.swift; sourceTree = "<group>"; };
-		30B873B424F87EEE00421A9B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		30B873B424F87EEE00421A9B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		30B873B624F8A0EF00421A9B /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
 		30B873BA24F8E6D300421A9B /* ChatModuleSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModuleSwitcher.swift; sourceTree = "<group>"; };
 		30B873BC24F8EF0B00421A9B /* ChatThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatThreadView.swift; sourceTree = "<group>"; };
 		30B873BE24F8EF1A00421A9B /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
 		30B873C024F8EF2800421A9B /* ShopifyActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopifyActionsView.swift; sourceTree = "<group>"; };
+		30BC2B182541B24B006C1C4C /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		30BC2B1D2541B60C006C1C4C /* TicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
 		30BE13C22505F159006B5C72 /* ResolveTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveTicketView.swift; sourceTree = "<group>"; };
+		30BE2B502544CF960078D988 /* ShopifyOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopifyOrder.swift; sourceTree = "<group>"; };
 		30D584832504DE010090EF48 /* CreateAndViewTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndViewTags.swift; sourceTree = "<group>"; };
+		30DA96A22541F888004EFD39 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		30DA96A72541FBC8004EFD39 /* OpenTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTickets.swift; sourceTree = "<group>"; };
+		30DA96AC2541FE00004EFD39 /* MyTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTickets.swift; sourceTree = "<group>"; };
+		30DA96BB25420348004EFD39 /* Messenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
+		30DA96C625422414004EFD39 /* OpenTicketsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTicketsRow.swift; sourceTree = "<group>"; };
+		30DA96CB254224DC004EFD39 /* MyTicketsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsRow.swift; sourceTree = "<group>"; };
+		30DA96D925422985004EFD39 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		30DA96DE254229AD004EFD39 /* MagicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTextField.swift; sourceTree = "<group>"; };
+		30DA96FB25422D5B004EFD39 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		30DA9703254236EB004EFD39 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		30EF147B24DBBE4700200A50 /* LemmeHelpV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemmeHelpV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF147E24DBBE4700200A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30EF148024DBBE4700200A50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30EF148224DBBE4700200A50 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		30EF148224DBBE4700200A50 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		30EF148424DBBE4900200A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30EF148724DBBE4900200A50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30EF148A24DBBE4900200A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -163,8 +193,8 @@
 		304AC0AF24F1426700465D9A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3071167E24F0F1D00085C29E /* Ticket.swift */,
-				3071168424F106F40085C29E /* Chat.swift */,
+				3071167E24F0F1D00085C29E /* TicketV1.swift */,
+				3071168424F106F40085C29E /* ChatV1.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,9 +213,8 @@
 		304AC0B224F1437700465D9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				309C92B024F1FA33000510EA /* Main View */,
-				309C92B124F1FA50000510EA /* Main Chat View */,
-				309C92B224F1FA5A000510EA /* Login */,
+				30DA969D2541EF87004EFD39 /* v2 */,
+				30DA969E2541F023004EFD39 /* v1 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,8 +222,8 @@
 		304AC0B324F1489600465D9A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				304AC0B424F148B100465D9A /* TicketsViewModel.swift */,
-				309C92AE24F166B9000510EA /* ChatsViewModel.swift */,
+				304AC0B424F148B100465D9A /* TicketsViewModelv1.swift */,
+				309C92AE24F166B9000510EA /* ChatsViewModelv1.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -202,7 +231,6 @@
 		309C92B024F1FA33000510EA /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				30EF148224DBBE4700200A50 /* TicketView.swift */,
 				30B873AF24F8524900421A9B /* BottomTabView.swift */,
 				30B873B824F8E54800421A9B /* New Tickets */,
 				30B873B924F8E56900421A9B /* My Tickets */,
@@ -225,18 +253,19 @@
 			path = "Main Chat View";
 			sourceTree = "<group>";
 		};
-		309C92B224F1FA5A000510EA /* Login */ = {
+		309C92B224F1FA5A000510EA /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				30EF148224DBBE4700200A50 /* RouterView.swift */,
+				30DA96A22541F888004EFD39 /* TabsView.swift */,
 				304E7F0E24F124AD00E9E76D /* LoginView.swift */,
 			);
-			path = Login;
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		30B873B324F87ED600421A9B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				30B873B424F87EEE00421A9B /* ProfileView.swift */,
 				3039795325051061004B91F9 /* ProfileBannerView.swift */,
 				30D584852504E9CB0090EF48 /* Creating and Viewing Tags */,
 			);
@@ -257,7 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				309C92B524F20226000510EA /* MyTicketsView.swift */,
-				309C92B724F2023D000510EA /* MyTicketRow.swift */,
+				309C92B724F2023D000510EA /* MyTicketRow1.swift */,
 				3048010824F9B553003D1205 /* MyTicketsBannerView.swift */,
 			);
 			path = "My Tickets";
@@ -295,6 +324,14 @@
 			path = "Shopify Actions View";
 			sourceTree = "<group>";
 		};
+		30BE2B4F2544CF6D0078D988 /* QuickActions */ = {
+			isa = PBXGroup;
+			children = (
+				30BE2B502544CF960078D988 /* ShopifyOrder.swift */,
+			);
+			path = QuickActions;
+			sourceTree = "<group>";
+		};
 		30D584852504E9CB0090EF48 /* Creating and Viewing Tags */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +339,96 @@
 				30397951250507CE004B91F9 /* ViewTagPerformance.swift */,
 			);
 			path = "Creating and Viewing Tags";
+			sourceTree = "<group>";
+		};
+		30DA969A2541EEE4004EFD39 /* Open Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				30DA96A72541FBC8004EFD39 /* OpenTickets.swift */,
+				30DA96C625422414004EFD39 /* OpenTicketsRow.swift */,
+			);
+			path = "Open Tickets";
+			sourceTree = "<group>";
+		};
+		30DA969B2541EF1D004EFD39 /* My Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				30DA96AC2541FE00004EFD39 /* MyTickets.swift */,
+				30DA96CB254224DC004EFD39 /* MyTicketsRow.swift */,
+			);
+			path = "My Tickets";
+			sourceTree = "<group>";
+		};
+		30DA969C2541EF3E004EFD39 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				30DA96BB25420348004EFD39 /* Messenger.swift */,
+				30097AE82547DE02001E0B4D /* MessageHeader.swift */,
+				30097AE32547DBE3001E0B4D /* AutotagBubble.swift */,
+				30DA96D925422985004EFD39 /* MessageBubble.swift */,
+				30DA96DE254229AD004EFD39 /* MagicTextField.swift */,
+				30BE2B4F2544CF6D0078D988 /* QuickActions */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		30DA969D2541EF87004EFD39 /* v2 */ = {
+			isa = PBXGroup;
+			children = (
+				30DA96E325422B58004EFD39 /* Views */,
+				30DA96E425422B99004EFD39 /* ViewModels */,
+				30DA96F125422C7B004EFD39 /* Models */,
+			);
+			path = v2;
+			sourceTree = "<group>";
+		};
+		30DA969E2541F023004EFD39 /* v1 */ = {
+			isa = PBXGroup;
+			children = (
+				309C92B024F1FA33000510EA /* Main View */,
+				309C92B124F1FA50000510EA /* Main Chat View */,
+				304AC0B324F1489600465D9A /* ViewModels */,
+				304AC0AF24F1426700465D9A /* Model */,
+			);
+			path = v1;
+			sourceTree = "<group>";
+		};
+		30DA96B12541FE1D004EFD39 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				30B873B424F87EEE00421A9B /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		30DA96E325422B58004EFD39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				309C92B224F1FA5A000510EA /* Framework */,
+				30DA969A2541EEE4004EFD39 /* Open Tickets */,
+				30DA969B2541EF1D004EFD39 /* My Tickets */,
+				30DA96B12541FE1D004EFD39 /* Profile */,
+				30DA969C2541EF3E004EFD39 /* Messenger */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30DA96E425422B99004EFD39 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BC2B1D2541B60C006C1C4C /* TicketViewModel.swift */,
+				30DA9703254236EB004EFD39 /* MessageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30DA96F125422C7B004EFD39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30BC2B182541B24B006C1C4C /* Ticket.swift */,
+				30DA96FB25422D5B004EFD39 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		30EF147224DBBE4700200A50 = {
@@ -332,8 +459,6 @@
 				306E78D225052A930021456B /* LemmeHelpV2.entitlements */,
 				304AC0B024F142AC00465D9A /* App */,
 				304AC0B224F1437700465D9A /* Views */,
-				304AC0B324F1489600465D9A /* ViewModels */,
-				304AC0AF24F1426700465D9A /* Model */,
 				30EF148424DBBE4900200A50 /* Assets.xcassets */,
 				30EF148924DBBE4900200A50 /* LaunchScreen.storyboard */,
 				3071168624F11BE20085C29E /* GoogleService-Info.plist */,
@@ -633,17 +758,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				30EF147F24DBBE4700200A50 /* AppDelegate.swift in Sources */,
-				3071168524F106F40085C29E /* Chat.swift in Sources */,
+				3071168524F106F40085C29E /* ChatV1.swift in Sources */,
+				30DA96CC254224DC004EFD39 /* MyTicketsRow.swift in Sources */,
 				30EF148124DBBE4700200A50 /* SceneDelegate.swift in Sources */,
+				30DA96A32541F888004EFD39 /* TabsView.swift in Sources */,
 				304E7F0F24F124AD00E9E76D /* LoginView.swift in Sources */,
 				3048010924F9B553003D1205 /* MyTicketsBannerView.swift in Sources */,
-				30EF148324DBBE4700200A50 /* TicketView.swift in Sources */,
+				30EF148324DBBE4700200A50 /* RouterView.swift in Sources */,
+				30BC2B1E2541B60C006C1C4C /* TicketViewModel.swift in Sources */,
+				30DA96BC25420348004EFD39 /* Messenger.swift in Sources */,
 				3039795425051061004B91F9 /* ProfileBannerView.swift in Sources */,
 				306E78D425052F2C0021456B /* PushNotificationManager.swift in Sources */,
 				30B873BB24F8E6D300421A9B /* ChatModuleSwitcher.swift in Sources */,
+				30097AE42547DBE3001E0B4D /* AutotagBubble.swift in Sources */,
+				30097AE92547DE02001E0B4D /* MessageHeader.swift in Sources */,
 				30EF14AF24DBC51A00200A50 /* NewTicketRow.swift in Sources */,
 				30B873C124F8EF2800421A9B /* ShopifyActionsView.swift in Sources */,
-				309C92AF24F166B9000510EA /* ChatsViewModel.swift in Sources */,
+				30DA96DF254229AD004EFD39 /* MagicTextField.swift in Sources */,
+				309C92AF24F166B9000510EA /* ChatsViewModelv1.swift in Sources */,
 				30B873B224F87D3000421A9B /* NewTicketsBannerView.swift in Sources */,
 				3039795025050599004B91F9 /* AddTagView.swift in Sources */,
 				3048010B24F9BF48003D1205 /* ContentView.swift in Sources */,
@@ -651,21 +783,29 @@
 				3048010524F90DEF003D1205 /* FloatingTabBar.swift in Sources */,
 				30BE13C32505F159006B5C72 /* ResolveTicketView.swift in Sources */,
 				304E7F1124F12E5300E9E76D /* SessionStore.swift in Sources */,
-				309C92B824F2023D000510EA /* MyTicketRow.swift in Sources */,
+				30DA96C725422414004EFD39 /* OpenTicketsRow.swift in Sources */,
+				309C92B824F2023D000510EA /* MyTicketRow1.swift in Sources */,
 				30B873AC24F8459800421A9B /* EnterAResponseView.swift in Sources */,
 				30B6D9B024F3B4930087E28F /* SuggestedArticleRow.swift in Sources */,
-				3071167F24F0F1D00085C29E /* Ticket.swift in Sources */,
+				30DA96AD2541FE00004EFD39 /* MyTickets.swift in Sources */,
+				3071167F24F0F1D00085C29E /* TicketV1.swift in Sources */,
 				309C92B624F20226000510EA /* MyTicketsView.swift in Sources */,
 				30B873B724F8A0EF00421A9B /* ChatHeaderView.swift in Sources */,
 				309C92BA24F2078C000510EA /* NewTicketsView.swift in Sources */,
 				30B873BD24F8EF0B00421A9B /* ChatThreadView.swift in Sources */,
+				30BE2B512544CF960078D988 /* ShopifyOrder.swift in Sources */,
+				30DA9704254236EB004EFD39 /* MessageViewModel.swift in Sources */,
 				30D584842504DE010090EF48 /* CreateAndViewTags.swift in Sources */,
 				30B873BF24F8EF1A00421A9B /* OrderDetailsView.swift in Sources */,
 				3071168324F104910085C29E /* ChatRow.swift in Sources */,
 				3071168124F103210085C29E /* ChatView.swift in Sources */,
-				304AC0B524F148B100465D9A /* TicketsViewModel.swift in Sources */,
+				30DA96DA25422985004EFD39 /* MessageBubble.swift in Sources */,
+				304AC0B524F148B100465D9A /* TicketsViewModelv1.swift in Sources */,
 				30397952250507CE004B91F9 /* ViewTagPerformance.swift in Sources */,
-				30B873B524F87EEE00421A9B /* ProfileView.swift in Sources */,
+				30BC2B192541B24B006C1C4C /* Ticket.swift in Sources */,
+				30B873B524F87EEE00421A9B /* Profile.swift in Sources */,
+				30DA96A82541FBC8004EFD39 /* OpenTickets.swift in Sources */,
+				30DA96FC25422D5B004EFD39 /* Message.swift in Sources */,
 				30B873B024F8524900421A9B /* BottomTabView.swift in Sources */,
 				3050CCD324F90A7200257FFE /* ConfirmTagView.swift in Sources */,
 			);
