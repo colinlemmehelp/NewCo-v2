@@ -16,15 +16,24 @@ struct MessageHeader: View {
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
-                Text(ticket.customer_email)
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.black.opacity(0.7))
-                    .padding(.bottom, 2)
+                if (ticket.ticket_mode == "SMS") {
+                    Text(ticket.customer_phone)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.black.opacity(0.7))
+                        .padding(.bottom, 2)
+                } else {
+                    Text(ticket.customer_email)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.black.opacity(0.7))
+                        .padding(.bottom, 2)
+                }
                 Text(convertHeaderTimestampToDateString(timestamp: ticket.ticket_timestamp))
                     .font(.subheadline)
                     .foregroundColor(Color.gray)
                     .padding(.bottom, 4)
+                    
             }
             Spacer()
             if (ticket.tag_selected != "") {

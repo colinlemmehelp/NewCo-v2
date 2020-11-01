@@ -21,7 +21,13 @@ struct Profile: View {
                 VStack {
                     ProfileBannerView()
                     List {
-                        Text("account")
+                        Text("Account")
+                        Button(action: {
+                            UIApplication.shared.open(URL(string: "https://us-central1-lemmehelpv2-firebase.cloudfunctions.net/stripeRouter/stripe")!)
+                            })  {
+                            Text("Connect to Stripe").foregroundColor(Color.blue)
+                        }
+                        
                         Text("notifications")
                         Text("settings")
                         Text("help")

@@ -16,11 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        // Use Firebase library to configure APIs
         
+        // Use Firebase library to configure APIs
         FirebaseApp.configure()
         
-        
+        // Set up connection to Stripe
+//        Stripe.setDefaultPublishableKey("pk_test_51HibuWKDPlyoN2kZ027Xz4u8BNh9cnJEd6bdhofCYOFmyki3t9DXu4BvGRSjnTNKbDqBsxT9QQgE94nvMuR46UtA0087j7WDDX")
         
         //application.registerForRemoteNotifications()
         //Messaging.messaging().delegate = self
