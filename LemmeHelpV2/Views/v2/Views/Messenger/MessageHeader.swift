@@ -11,6 +11,8 @@ import SwiftUI
 struct MessageHeader: View {
     var ticket: Ticket
     
+    @State var showSelectTagSheet = false
+    
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
@@ -36,10 +38,15 @@ struct MessageHeader: View {
                     .background(RoundedRectangle(cornerRadius: 7).strokeBorder(Color.blue, lineWidth: 1))
                 }
             } else {
-                Text("+ Add tag")
-                    .font(.subheadline)
-                    .fontWeight(.regular)
-                    .foregroundColor(Color.blue)
+                Button(action: {self.showSelectTagSheet.toggle()}) {
+                    Text("+ Add tag")
+                        .font(.subheadline)
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.blue)
+                    .sheet(isPresented: $showSelectTagSheet, content: {
+                        //SelectTag()
+                    })
+                }
             }
         }.padding(.horizontal, 16)
         .padding(.vertical, 8)

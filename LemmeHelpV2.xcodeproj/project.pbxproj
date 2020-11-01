@@ -19,6 +19,12 @@
 		304E7F0F24F124AD00E9E76D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E7F0E24F124AD00E9E76D /* LoginView.swift */; };
 		304E7F1124F12E5300E9E76D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E7F1024F12E5300E9E76D /* SessionStore.swift */; };
 		3050CCD324F90A7200257FFE /* ConfirmTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050CCD224F90A7200257FFE /* ConfirmTagView.swift */; };
+		30666BD8254E12B900550A82 /* ResolveTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30666BD7254E12B900550A82 /* ResolveTicket.swift */; };
+		30666BDD254E16FB00550A82 /* MyTicketsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30666BDC254E16FB00550A82 /* MyTicketsHeader.swift */; };
+		30666BE4254E172B00550A82 /* MyOpenTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30666BE3254E172B00550A82 /* MyOpenTickets.swift */; };
+		30666BEC254E254300550A82 /* MyClosedTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30666BEB254E254300550A82 /* MyClosedTickets.swift */; };
+		30666BF1254E267600550A82 /* SelectTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30666BF0254E267600550A82 /* SelectTag.swift */; };
+		30666BF6254E28BF00550A82 /* MyClosedTicketsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30666BF5254E28BF00550A82 /* MyClosedTicketsRow.swift */; };
 		306E78D425052F2C0021456B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E78D325052F2C0021456B /* PushNotificationManager.swift */; };
 		3071167F24F0F1D00085C29E /* TicketV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071167E24F0F1D00085C29E /* TicketV1.swift */; };
 		3071168124F103210085C29E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071168024F103210085C29E /* ChatView.swift */; };
@@ -102,6 +108,12 @@
 		304E7F0E24F124AD00E9E76D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		304E7F1024F12E5300E9E76D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		3050CCD224F90A7200257FFE /* ConfirmTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTagView.swift; sourceTree = "<group>"; };
+		30666BD7254E12B900550A82 /* ResolveTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveTicket.swift; sourceTree = "<group>"; };
+		30666BDC254E16FB00550A82 /* MyTicketsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsHeader.swift; sourceTree = "<group>"; };
+		30666BE3254E172B00550A82 /* MyOpenTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOpenTickets.swift; sourceTree = "<group>"; };
+		30666BEB254E254300550A82 /* MyClosedTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClosedTickets.swift; sourceTree = "<group>"; };
+		30666BF0254E267600550A82 /* SelectTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTag.swift; sourceTree = "<group>"; };
+		30666BF5254E28BF00550A82 /* MyClosedTicketsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClosedTicketsRow.swift; sourceTree = "<group>"; };
 		306E78D225052A930021456B /* LemmeHelpV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LemmeHelpV2.entitlements; sourceTree = "<group>"; };
 		306E78D325052F2C0021456B /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		3071167E24F0F1D00085C29E /* TicketV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketV1.swift; sourceTree = "<group>"; };
@@ -228,6 +240,24 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		30666BE1254E170500550A82 /* My Open Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				30DA96CB254224DC004EFD39 /* MyTicketsRow.swift */,
+				30666BE3254E172B00550A82 /* MyOpenTickets.swift */,
+			);
+			path = "My Open Tickets";
+			sourceTree = "<group>";
+		};
+		30666BE2254E171600550A82 /* My Closed Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				30666BEB254E254300550A82 /* MyClosedTickets.swift */,
+				30666BF5254E28BF00550A82 /* MyClosedTicketsRow.swift */,
+			);
+			path = "My Closed Tickets";
+			sourceTree = "<group>";
+		};
 		309C92B024F1FA33000510EA /* Main View */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +358,8 @@
 			isa = PBXGroup;
 			children = (
 				30BE2B502544CF960078D988 /* ShopifyOrder.swift */,
+				30666BD7254E12B900550A82 /* ResolveTicket.swift */,
+				30666BF0254E267600550A82 /* SelectTag.swift */,
 			);
 			path = QuickActions;
 			sourceTree = "<group>";
@@ -354,7 +386,9 @@
 			isa = PBXGroup;
 			children = (
 				30DA96AC2541FE00004EFD39 /* MyTickets.swift */,
-				30DA96CB254224DC004EFD39 /* MyTicketsRow.swift */,
+				30666BDC254E16FB00550A82 /* MyTicketsHeader.swift */,
+				30666BE2254E171600550A82 /* My Closed Tickets */,
+				30666BE1254E170500550A82 /* My Open Tickets */,
 			);
 			path = "My Tickets";
 			sourceTree = "<group>";
@@ -771,8 +805,11 @@
 				306E78D425052F2C0021456B /* PushNotificationManager.swift in Sources */,
 				30B873BB24F8E6D300421A9B /* ChatModuleSwitcher.swift in Sources */,
 				30097AE42547DBE3001E0B4D /* AutotagBubble.swift in Sources */,
+				30666BF1254E267600550A82 /* SelectTag.swift in Sources */,
 				30097AE92547DE02001E0B4D /* MessageHeader.swift in Sources */,
+				30666BF6254E28BF00550A82 /* MyClosedTicketsRow.swift in Sources */,
 				30EF14AF24DBC51A00200A50 /* NewTicketRow.swift in Sources */,
+				30666BDD254E16FB00550A82 /* MyTicketsHeader.swift in Sources */,
 				30B873C124F8EF2800421A9B /* ShopifyActionsView.swift in Sources */,
 				30DA96DF254229AD004EFD39 /* MagicTextField.swift in Sources */,
 				309C92AF24F166B9000510EA /* ChatsViewModelv1.swift in Sources */,
@@ -791,6 +828,7 @@
 				3071167F24F0F1D00085C29E /* TicketV1.swift in Sources */,
 				309C92B624F20226000510EA /* MyTicketsView.swift in Sources */,
 				30B873B724F8A0EF00421A9B /* ChatHeaderView.swift in Sources */,
+				30666BD8254E12B900550A82 /* ResolveTicket.swift in Sources */,
 				309C92BA24F2078C000510EA /* NewTicketsView.swift in Sources */,
 				30B873BD24F8EF0B00421A9B /* ChatThreadView.swift in Sources */,
 				30BE2B512544CF960078D988 /* ShopifyOrder.swift in Sources */,
@@ -798,8 +836,10 @@
 				30D584842504DE010090EF48 /* CreateAndViewTags.swift in Sources */,
 				30B873BF24F8EF1A00421A9B /* OrderDetailsView.swift in Sources */,
 				3071168324F104910085C29E /* ChatRow.swift in Sources */,
+				30666BEC254E254300550A82 /* MyClosedTickets.swift in Sources */,
 				3071168124F103210085C29E /* ChatView.swift in Sources */,
 				30DA96DA25422985004EFD39 /* MessageBubble.swift in Sources */,
+				30666BE4254E172B00550A82 /* MyOpenTickets.swift in Sources */,
 				304AC0B524F148B100465D9A /* TicketsViewModelv1.swift in Sources */,
 				30397952250507CE004B91F9 /* ViewTagPerformance.swift in Sources */,
 				30BC2B192541B24B006C1C4C /* Ticket.swift in Sources */,

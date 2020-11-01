@@ -15,34 +15,19 @@ struct MyTickets: View {
     //Use the binding var to pass along to the TabsView so it can switch tabs
     @Binding var desiredTab: RouterView.tabChoices
     
-    //Observe the Tickets ViewModel to get the latest tix
-    @ObservedObject var viewModel = TicketViewModel()
+//    //Observe the Tickets ViewModel to get the latest tix
+//    @ObservedObject var viewModel = TicketViewModel()
     
+    //Initialize the router on the MyTickets page
+    @State var ticketStatus = 0
     
     var body: some View {
-        NavigationView {
-            VStack {
-                ScrollView {
-                    VStack {
-                        ForEach(viewModel.myTicketsArray_OPEN) { ticket in
-                            NavigationLink(destination: Messenger(ticket: ticket)) {
-                                MyTicketsRow(ticket: ticket)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                        }
-                    }
-                }
-                TabsView(desiredTab: $desiredTab)
-            }
-            .edgesIgnoringSafeArea([.bottom])
-            .navigationBarTitle(Text(""))
-            .navigationBarHidden(true)
+        if ticketStatus == 0 {
+            MyOpenTickets(desiredTab: self.$desiredTab, ticketStatus: self.$ticketStatus)
+        } else {
+            MyClosedTickets(desiredTab: self.$desiredTab, ticketStatus: self.$ticketStatus)
         }
-        .onAppear(perform: {
-            print(session.session!.uid)
-            self.viewModel.myTicketsArray_OPEN.removeAll()
-            self.viewModel.getMyTickets_OPEN(agentID: session.session!.uid)
-        })
+        
     }
 }
 

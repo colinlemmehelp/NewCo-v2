@@ -40,11 +40,12 @@ struct TabsView: View {
                 Spacer()
                 Button(action: self.switchToMyTickets, label: {
                     if (desiredTab.self == .myTickets) {
-                        Text("Current").font(.title).foregroundColor(Color.blue)
+                        Text("Mine").font(.title).foregroundColor(Color.blue)
                     } else {
-                        Text("Current").font(.title).foregroundColor(Color.gray)
+                        Text("Mine").font(.title).foregroundColor(Color.gray)
                     }
                 })
+                Spacer()
                 Spacer()
                 Spacer()
                 Spacer()

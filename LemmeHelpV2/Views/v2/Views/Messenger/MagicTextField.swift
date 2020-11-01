@@ -17,10 +17,14 @@ struct MagicTextField: View {
     @State private var response: String = ""
     
     @State var showSheet = false
+    @State var showResolutionSheet = false
     
     var ticket: Ticket
     
     func sendResponse() {
+        if (ticket.state_agentID == "") {
+            viewModel.createFirstAgentResponseTimestamp(ticket_reference: self.ticket.ticket_reference)
+        }
         messageViewModel.addResponse(ticket_reference: self.ticket.ticket_reference, message: self.response, state_agentID: session.session!.uid, ticket_mode: self.ticket.ticket_mode)
         self.response = ""
     }
@@ -64,17 +68,16 @@ struct MagicTextField: View {
                     .background(RoundedRectangle(cornerRadius: 5).fill(Color.blue.opacity(0.2)))
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color.blue, lineWidth: 2))
 
-                    //Resolve
-                    Button(action: {
-                        viewModel.resolveTicket(ticket_reference: ticket.ticket_reference, state_rating: 4)
-                    }) {
-                        Text("Resolve ticket").font(.subheadline).foregroundColor(Color.red)
-                        .padding(4)
-                        .background(RoundedRectangle(cornerRadius: 5).fill(Color.red.opacity(0.2)))
-                        .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color.red, lineWidth: 2))
-                        }
-
+                    //Resolution button
+                    Button(action: {self.showResolutionSheet.toggle()}) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.body)
+                            .sheet(isPresented: $showResolutionSheet, content: {
+                                ResolveTicket(ticket: ticket, showResolutionSheet: self.$showResolutionSheet)
+                            })
                     }
+
+                }
             }.background(Color("newPrimaryColor"))
             HStack {
                 TextField("Enter a response", text: $response)

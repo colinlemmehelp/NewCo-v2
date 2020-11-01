@@ -69,10 +69,10 @@ class TicketViewModel: ObservableObject, Identifiable {
                     print("No documents")
                     return
                 }
-            print(documents.count)
-            for doc in documents {
-                print(doc.data())
-            }
+//            print(documents.count)
+//            for doc in documents {
+//                print(doc.data())
+//            }
 //            print("docs count")
                 self.myTicketsArray_OPEN = documents.compactMap { (queryDocumentSnapshot) -> Ticket? in
                     //print(try? queryDocumentSnapshot.data(as: Ticket.self))
@@ -86,7 +86,7 @@ class TicketViewModel: ObservableObject, Identifiable {
     //Get my tickets that are currently CLOSED
     func getMyTickets_CLOSED(agentID: String) {
         db.collection("tickets")
-            .whereField("state_AgentID", isEqualTo: agentID)
+            .whereField("state_agentID", isEqualTo: agentID)
             .whereField("state_status", isEqualTo: "CLOSED")
             .order(by: "lastMessage_timestamp", descending: true)
             .addSnapshotListener { (querySnapshot, error) in
@@ -94,8 +94,10 @@ class TicketViewModel: ObservableObject, Identifiable {
                     print("No documents")
                     return
                 }
-//            print(documents.count)
-//            print("docs count")
+//                print(documents.count)
+//                for doc in documents {
+//                    print(doc.data())
+//                }
                 self.myTicketsArray_CLOSED = documents.compactMap { (queryDocumentSnapshot) -> Ticket? in
                     //print(try? queryDocumentSnapshot.data(as: Ticket.self))
                     return try? queryDocumentSnapshot.data(as: Ticket.self)
@@ -109,7 +111,7 @@ class TicketViewModel: ObservableObject, Identifiable {
         db.collection("tickets").document(ticket_reference).updateData([
             "state_rating": state_rating,
             "state_status": "CLOSED",
-            "state_resolutionTimestamp": Date().timeIntervalSince1970
+            "state_resolutionTimestamp": round(Date().timeIntervalSince1970)
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")
@@ -150,6 +152,18 @@ class TicketViewModel: ObservableObject, Identifiable {
     func tag_dismissAutoTag(ticket_reference: String) {
         db.collection("tickets").document(ticket_reference).updateData([
             "tag_isDismissed": true
+        ]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+            } else {
+                //print("Document successfully updated")
+            }
+        }
+    }
+    
+    func createFirstAgentResponseTimestamp(ticket_reference: String) {
+        db.collection("tickets").document(ticket_reference).updateData([
+            "ticket_firstResponseTimestamp": round(Date().timeIntervalSince1970)
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")
